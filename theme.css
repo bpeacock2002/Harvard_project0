@@ -1,8 +1,18 @@
 body {background-color: #9cdbad 
 }
-h1 {
+
+h1, h2 {
     text-align:center
 }
-h2 {
-    text-align:center
+
+@media (min-width: 500px) {
+    h2::before {
+        content: "Welcome to My Story"
+    }
+}
+
+@media (max-width: 499px) {
+    h2::before {
+        content: "My Story"
+    }
 }
